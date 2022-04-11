@@ -44,11 +44,11 @@ public class Treinamento {
         FaceRecognizer lbph = LBPHFaceRecognizer.create(2,9,9,9,1);
 
         eigenfaces.train(fotos, rotulos);
-        eigenfaces.save("src\\recursos\\classificadorEigenFaces.yml");
+        eigenfaces.save("src/main/java/recursos/classificadorEigenFaces.yml");
         fisherfaces.train(fotos, rotulos);
-        fisherfaces.save("src\\recursos\\classificadorFisherFaces.yml");
+        fisherfaces.save("src/main/java/recursos/classificadorFisherFaces.yml");
         lbph.train(fotos, rotulos);
-        lbph.save("src\\recursos\\classificadorLBPH.yml");
+        lbph.save("src/main/java/recursos/classificadorLBPH.yml");
     }
 
 }
